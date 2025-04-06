@@ -13,7 +13,7 @@ public class MixinFriendlyByteBuf {
 
     @Inject(method = "writeResourceLocation", at = @At("HEAD"), cancellable = true)
     public void writeResourceLocation(ResourceLocation rl, CallbackInfoReturnable<FriendlyByteBuf> cbr) {
-        if (rl.getNamespace().equalsIgnoreCase(ResourceLocation.DEFAULT_NAMESPACE)) {
+        if (rl.getNamespace().equals(ResourceLocation.DEFAULT_NAMESPACE)) {
             this.writeUtf(rl.getPath());
             cbr.setReturnValue((FriendlyByteBuf) (Object) this);
         }

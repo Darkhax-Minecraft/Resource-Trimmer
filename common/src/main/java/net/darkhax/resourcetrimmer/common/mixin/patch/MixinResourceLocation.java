@@ -1,7 +1,6 @@
 package net.darkhax.resourcetrimmer.common.mixin.patch;
 
 import io.netty.buffer.ByteBuf;
-import net.darkhax.bookshelf.common.impl.Constants;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceLocation;
@@ -23,6 +22,6 @@ public class MixinResourceLocation {
 
     @Inject(method = "<clinit>", at = @At("RETURN"))
     private static void inject(CallbackInfo ci) {
-        STREAM_CODEC = ByteBufCodecs.STRING_UTF8.map(ResourceLocation::parse, rl -> (rl.getNamespace().equalsIgnoreCase(ResourceLocation.DEFAULT_NAMESPACE)) ? rl.getPath() : rl.toString());
+        STREAM_CODEC = ByteBufCodecs.STRING_UTF8.map(ResourceLocation::parse, rl -> (rl.getNamespace().equals(ResourceLocation.DEFAULT_NAMESPACE)) ? rl.getPath() : rl.toString());
     }
 }
