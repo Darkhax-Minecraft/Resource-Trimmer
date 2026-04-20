@@ -1,0 +1,23 @@
+{
+  "mod": {
+    "name": "ResourceTrimmer",
+    "group": "net.darkhax.resourcetrimmer",
+    "authors": [
+      "Darkhax"
+    ],
+    "id": "resourcetrimmer",
+    "license": "LGPL v2",
+    "description": "Reduces the size of resource locations on the network.",
+    "repo": "https://github.com/Darkhax-Minecraft/Resource-Trimmer",
+    "client": false
+  },
+  "curseforge": {
+    "slug": "resource-trimmer",
+    "id": "1235231"
+  },
+  "modrinth": {
+    "slug": "resource-trimmer",
+    "id": "TVKrCZNh"
+  },
+  "dependencies": []
+}
