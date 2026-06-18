@@ -4,9 +4,9 @@ issueTrackerURL = "https://github.com/Darkhax-Minecraft/Resource-Trimmer/issues"
 
 [[mods]]
 modId = "resourcetrimmer"
-version = "26.1.2.0"
+version = "26.2.0.0"
 displayName = "ResourceTrimmer"
-updateJSONURL = "https://updates.blamejared.com/get?n=resourcetrimmer&gv=26.1.2&ml=neoforge"
+updateJSONURL = "https://updates.blamejared.com/get?n=resourcetrimmer&gv=26.2&ml=neoforge"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/resource-trimmer"
 logoFile = "logo_resourcetrimmer.png"
 logoBlur = false
@@ -23,14 +23,14 @@ config = "resourcetrimmer.neoforge.mixins.json"
 [[dependencies.resourcetrimmer]]
 modId = "minecraft"
 type = "required"
-versionRange = "26.1"
+versionRange = "26.2"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.resourcetrimmer]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.1.0.1-beta,)"
+versionRange = "[26.2.0.1-beta,)"
 ordering = "NONE"
 side = "BOTH"
 
